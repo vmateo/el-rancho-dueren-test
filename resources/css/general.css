@@ -67,6 +67,26 @@
   background-color: #fce9e6;
 }
 
+.btn--secondary:link,
+.btn--secondary:visited {
+  background-color: #ffa11d;
+  color: #fff;
+}
+
+.btn--secondary:hover {
+  background-color: #e6911a;
+}
+
+.btn--tertiary:link,
+.btn--tertiary:visited {
+  background-color: #ffd43b;
+  color: #fff;
+}
+
+.btn--tertiary:hover {
+  background-color: #e6bf35;
+}
+
 /****************************
 **** UTILITIES
 *****************************/
@@ -77,4 +97,8 @@
 
 .margin-bottom-big {
   margin-bottom: 6.4rem !important;
+}
+
+.center-text {
+  text-align: center;
 }
