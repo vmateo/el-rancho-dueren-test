@@ -20,11 +20,15 @@
     <link rel="stylesheet" href="./resources/css/layout.css" />
     <link rel="stylesheet" href="./resources/css/style.css" />
     <link rel="stylesheet" href="./resources/css/queries.css" />
+    <!----- VENDOR JS ----->
+    <script defer src="./vendors/js/fix-flexbox-gap.js"></script>
+    <!------ JS ------->
+    <script defer src="./resources/js/script.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-sticky-box">
-        <a href="#">
+        <a href="#header" class="link-scroll">
           <img
             src="./resources/img/logo.png"
             alt="EL RANCHO logo"
@@ -35,19 +39,29 @@
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li>
-              <a href="#section-about" class="main-nav-link">Über uns</a>
+              <a href="#section-about" class="main-nav-link link-scroll"
+                >Über uns</a
+              >
             </li>
             <li>
-              <a href="#section-gallery" class="main-nav-link">Fotogalerie</a>
+              <a href="#section-gallery" class="main-nav-link link-scroll"
+                >Fotogalerie</a
+              >
             </li>
             <li>
-              <a href="#section-menu" class="main-nav-link">Speisekarte</a>
+              <a href="#section-menu" class="main-nav-link link-scroll"
+                >Speisekarte</a
+              >
             </li>
             <li>
-              <a href="#section-approach" class="main-nav-link">Anfahrt</a>
+              <a href="#section-approach" class="main-nav-link link-scroll"
+                >Anfahrt</a
+              >
             </li>
             <li>
-              <a href="#section-cta" class="main-nav-link">Kontakt</a>
+              <a href="#section-cta" class="main-nav-link link-scroll"
+                >Kontakt</a
+              >
             </li>
             <li><a href="#" class="main-nav-link">Impressum</a></li>
           </ul>
@@ -64,10 +78,14 @@
           EL RANCHO Steakhaus<br />Ihr Steakhaus in Düren
         </h1>
 
-        <a href="#section-menu" class="btn btn--primary margin-right-sm"
+        <a
+          href="#section-menu"
+          class="btn btn--primary margin-right-sm link-scroll"
           >Ich bin hungrig</a
         >
-        <a href="#section-gallery" class="btn btn--reverse">Zeige mir mehr</a>
+        <a href="#section-gallery" class="btn btn--reverse link-scroll"
+          >Zeige mir mehr</a
+        >
       </div>
     </header>
 
@@ -351,7 +369,9 @@
                   ></textarea>
                 </div>
 
-                <button type="submit" class="btn-form">Senden</button>
+                <div class="form-group">
+                  <button type="submit" class="btn-form">Senden</button>
+                </div>
               </form>
             </div>
             <div class="cta-img-box"></div>

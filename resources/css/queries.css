@@ -153,3 +153,26 @@
     font-size: 2rem;
   }
 }
+
+/****************************
+**** FIXING FLEXBOX GAP
+*****************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 3.2rem;
+}
+
+.no-flexbox-gap .meal-attributes li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .form .form-group:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 46.8em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
